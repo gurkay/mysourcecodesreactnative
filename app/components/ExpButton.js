@@ -9,8 +9,8 @@ import {
 } from 'react-native';
 import { Actions } from 'react-native-router-flux';
 
-const goToHome = () => {
-    Actions.home();
+const goToTextExample = () => {
+    Actions.textExample();
 }
 
 function FuncSeparator() {
@@ -28,8 +28,8 @@ const ExpButton = () => {
                     accessibilityLabel to help make your app usable by everyone.
                 </Text>
                 <Button
-                    title="Press Me"
-                    onPress={() => Alert.alert('Simple Button pressed')}
+                    title="Go to Text Example"
+                    onPress={goToTextExample}
                 />
                 <View style={styles.separator}></View>
                 <FuncSeparator />
