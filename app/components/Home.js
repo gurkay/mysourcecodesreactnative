@@ -18,19 +18,35 @@ const DATA = [
             },
             {
                 'id': '1',
+                'value': 'Activity Indicator'
+            },
+            {
+                'id': '2',
                 'value': 'Button'
-            }
+            },
+            {
+                'id': '3',
+                'value': 'Flat List'
+            },
+            {
+                'id': '4',
+                'value': 'Image'
+            },
+            {
+                'id': '5',
+                'value': 'Image Background'
+            },
         ]
     },
     {
         key: 'App Examples',
         data: [
             {
-                'id': '2',
+                'id': '22',
                 'value': 'S2_Record1'
             },
             {
-                'id': '3',
+                'id': '23',
                 'value': 'S2_Record2'
             }
         ]
@@ -39,11 +55,11 @@ const DATA = [
         key: 'Other',
         data: [
             {
-                'id': '4',
+                'id': '24',
                 'value': 'S3_Record1'
             },
             {
-                'id': '5',
+                'id': '25',
                 'value': 'About'
             }
         ]
@@ -57,10 +73,10 @@ const goToRoutes = (goTo) => {
             Actions.textExample();
             break;
         case '1':
-            Actions.about();
+            Actions.expActivityIndicator();
             break;
         case '2':
-            Actions.about();
+            Actions.expButton();
             break;
         case '3':
             Actions.about();
@@ -68,7 +84,7 @@ const goToRoutes = (goTo) => {
         case '4':
             Actions.about();
             break;
-        case '5':
+        case '25':
             Actions.about();
             break;
     }

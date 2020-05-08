@@ -1,12 +1,14 @@
 import React from 'react';
 import { TouchableOpacity, Text, StyleSheet } from 'react-native';
-import {Actions} from 'react-native-router-flux';
+import { Actions } from 'react-native-router-flux';
+
+const goToHome = () => {
+    Actions.home();
+}
 
 const TextExample = () => {
-    const goToHome = () => {
-        Actions.home();
-    }
-    return(
+
+    return (
         <TouchableOpacity
             style={styles.container}
             onPress={goToHome}
@@ -16,13 +18,12 @@ const TextExample = () => {
     );
 }
 
-
 export default TextExample;
 
 const styles = StyleSheet.create({
     container: {
-        flex:1,
+        flex: 1,
         marginTop: 16,
-        marginHorizontal:16
+        marginHorizontal: 16
     },
 });
