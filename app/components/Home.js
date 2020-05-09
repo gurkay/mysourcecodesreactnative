@@ -26,14 +26,18 @@ const DATA = [
             },
             {
                 'id': '3',
-                'value': 'Flat List'
+                'value': 'Flat List Simple'
             },
             {
                 'id': '4',
-                'value': 'Image'
+                'value': 'Flat List Selectable'
             },
             {
                 'id': '5',
+                'value': 'Image'
+            },
+            {
+                'id': '6',
                 'value': 'Image Background'
             },
         ]
@@ -79,10 +83,16 @@ const goToRoutes = (goTo) => {
             Actions.expButton();
             break;
         case '3':
-            Actions.about();
+            Actions.expFlatListSimple();
             break;
         case '4':
-            Actions.about();
+            Actions.expFlatListSelectable();
+            break;
+        case '5':
+            Actions.expImages();
+            break;
+        case '6':
+            Actions.expImageBackground();
             break;
         case '25':
             Actions.about();

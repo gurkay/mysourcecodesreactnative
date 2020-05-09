@@ -5,6 +5,10 @@ import About from './components/About';
 import TextExample from './components/TextExample';
 import ExpActivityIndicator from './components/ExpActivityIndicator';
 import ExpButton from './components/ExpButton';
+import ExpFlatListSimple from './components/ExpFlatListSimple'
+import ExpFlatListSelectable from './components/ExpFlatListSelectable'
+import ExpImages from './components/ExpImages'
+import ExpImageBackground from './components/ExpImageBackground'
 
 const Routes = () => {
     return (
@@ -14,6 +18,10 @@ const Routes = () => {
                 <Scene key="textExample" component={TextExample} title="Text Example" />
                 <Scene key="expActivityIndicator" component={ExpActivityIndicator} title="Example Activity Indicator" />
                 <Scene key="expButton" component={ExpButton} title="Button Examples" />
+                <Scene key="expFlatListSimple" component={ExpFlatListSimple} title="Flat List Simple" />
+                <Scene key="expFlatListSelectable" component={ExpFlatListSelectable} title="Flat List Selectable" />
+                <Scene key="expImages" component={ExpImages} title="Images Examples" />
+                <Scene key="expImageBackground" component={ExpImageBackground} title="Images Background Examples" />
                 <Scene key="about" component={About} title="About" />
             </Scene>
         </Router>
