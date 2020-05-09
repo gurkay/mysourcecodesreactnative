@@ -2,9 +2,11 @@ import React from 'react'
 import {
     ImageBackground,
     StyleSheet,
+    Image,
     Text,
     View
 } from 'react-native'
+import ExpSeparato from './ExpSeparator'
 
 const imageSource = require("../images/input.jpg");
 
@@ -15,6 +17,11 @@ const ExpImageBackground = () => {
                 <Text style={styles.text}>
                     Inside Background image
                 </Text>
+                <ExpSeparato/>
+                <Image
+                    style={styles.logo}
+                    source={require('../images/linux.png')}
+                />
             </ImageBackground>
         </View>
     );
@@ -37,5 +44,10 @@ const styles = StyleSheet.create({
         fontSize:30,
         marginLeft:5,
         fontWeight:"bold",
+    },
+    logo:{
+        width:66,
+        height:58,
+        marginLeft:5,
     },
 });

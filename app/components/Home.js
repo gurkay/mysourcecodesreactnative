@@ -40,6 +40,26 @@ const DATA = [
                 'id': '6',
                 'value': 'Image Background'
             },
+            {
+                'id': '7',
+                'value': 'Keyboard Avoiding View'
+            },
+            {
+                'id': '8',
+                'value': 'Keyboard Avoiding View'
+            },
+            {
+                'id': '9',
+                'value': 'Keyboard Avoiding View'
+            },
+            {
+                'id': '10',
+                'value': 'Keyboard Avoiding View'
+            },
+            {
+                'id': '11',
+                'value': 'Keyboard Avoiding View'
+            },
         ]
     },
     {
@@ -92,6 +112,21 @@ const goToRoutes = (goTo) => {
             Actions.expImages();
             break;
         case '6':
+            Actions.expImageBackground();
+            break;
+        case '7':
+            Actions.expKeyboard();
+            break; 
+        case '8':
+            Actions.expImageBackground();
+            break;
+        case '9':
+            Actions.expImageBackground();
+            break; 
+        case '10':
+            Actions.expImageBackground();
+            break; 
+        case '11':
             Actions.expImageBackground();
             break;
         case '25':

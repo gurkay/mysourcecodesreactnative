@@ -9,6 +9,7 @@ import ExpFlatListSimple from './components/ExpFlatListSimple'
 import ExpFlatListSelectable from './components/ExpFlatListSelectable'
 import ExpImages from './components/ExpImages'
 import ExpImageBackground from './components/ExpImageBackground'
+import ExpKeyboard from './components/ExpKeyboard';
 
 const Routes = () => {
     return (
@@ -22,6 +23,7 @@ const Routes = () => {
                 <Scene key="expFlatListSelectable" component={ExpFlatListSelectable} title="Flat List Selectable" />
                 <Scene key="expImages" component={ExpImages} title="Images Examples" />
                 <Scene key="expImageBackground" component={ExpImageBackground} title="Images Background Examples" />
+                <Scene key="expKeyboard" component={ExpKeyboard} title="Keyboard Example"/>
                 <Scene key="about" component={About} title="About" />
             </Scene>
         </Router>
