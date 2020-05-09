@@ -10,7 +10,7 @@ import { Actions } from 'react-native-router-flux';
 
 const DATA = [
     {
-        key: 'Basic',
+        key: 'Basic Components',
         data: [
             {
                 'id': '0',
@@ -46,19 +46,23 @@ const DATA = [
             },
             {
                 'id': '8',
-                'value': 'Keyboard Avoiding View'
+                'value': 'Modal'
             },
             {
                 'id': '9',
-                'value': 'Keyboard Avoiding View'
+                'value': 'Refresh Control'
             },
             {
                 'id': '10',
-                'value': 'Keyboard Avoiding View'
+                'value': 'StatusBar'
             },
             {
                 'id': '11',
-                'value': 'Keyboard Avoiding View'
+                'value': 'Switch'
+            },
+            {
+                'id': '12',
+                'value': 'Text Input'
             },
         ]
     },
@@ -91,10 +95,9 @@ const DATA = [
 ];
 
 const goToRoutes = (goTo) => {
-    console.log(goTo);
     switch (goTo) {
         case '0':
-            Actions.textExample();
+            Actions.expText();
             break;
         case '1':
             Actions.expActivityIndicator();
@@ -118,16 +121,19 @@ const goToRoutes = (goTo) => {
             Actions.expKeyboard();
             break; 
         case '8':
-            Actions.expImageBackground();
+            Actions.expModal();
             break;
         case '9':
-            Actions.expImageBackground();
+            Actions.expRefresh();
             break; 
         case '10':
-            Actions.expImageBackground();
+            Actions.expStatusBar();
             break; 
         case '11':
-            Actions.expImageBackground();
+            Actions.expSwitch();
+            break;
+        case '12':
+            Actions.expTextInput();
             break;
         case '25':
             Actions.about();
@@ -138,7 +144,7 @@ const goToRoutes = (goTo) => {
 const Home = () => {
     return (
         <View testID='container' style={styles.container}>
-            <Text style={styles.header}>Section List Test</Text>
+            <Text style={styles.header}>Section List</Text>
             <SectionList
                 testID='section_list'
                 keyExtractor={(item, index) => item + index}
