@@ -3,50 +3,51 @@ import { Router, Scene } from 'react-native-router-flux';
 
 import Home from './components/Home';
 import About from './components/About';
-import ExpText from './components/ExpText';
-import ExpActivityIndicator from './components/ExpActivityIndicator';
-import ExpButton from './components/ExpButton';
-import ExpFlatListSimple from './components/ExpFlatListSimple'
-import ExpFlatListSelectable from './components/ExpFlatListSelectable'
-import ExpImages from './components/ExpImages'
-import ExpImageBackground from './components/ExpImageBackground'
-import ExpKeyboard from './components/ExpKeyboard';
-import ExpModal from './components/ExpModal';
-import ExpRefresh from './components/ExpRefresh';
-import ExpStatusBar from './components/ExpStatusBar';
-import ExpSwitch from './components/ExpSwitch';
-import ExpTextInput from './components/ExpTextInput';
-import ExpTouchableHighlight from './components/ExpTouchableHighlight';
-import ExpTouchableOpacity from './components/ExpTouchableOpacity';
-import ExpTouchableWithoutFeedback from './components/ExpTouchableWithoutFeedback';
-import ExpVirtualizedList from './components/ExpVirtualizedList';
-import ApiAccessibilityInfo from './components/ApiAccessibilityInfo';
-import ApiAlert from './components/ApiAlert';
-import ApiAnimated from './components/ApiAnimated';
-import ApiAppearance from './components/ApiAppearance';
-import ApiAppRegistry from './components/ApiAppRegistry';
-import ApiAppState from './components/ApiAppState';
-import ApiDevSettings from './components/ApiDevSettings';
-import ApiDimensions from './components/ApiDimensions';
-import ApiEasing from './components/ApiEasing';
-import ApiInteractionManager from './components/ApiInteractionManager';
-import ApiKeyboard from './components/ApiKeyboard';
-import ApiLayoutAnimation from './components/ApiLayoutAnimation';
-import ApiLinking from './components/ApiLinking';
-import ApiPanResponder from './components/ApiPanResponder';
-import ApiPixelRatio from './components/ApiPixelRatio';
-import ApiShare from './components/ApiShare';
-import ApiStyleSheet from './components/ApiStyleSheet';
-import ApiSystrace from './components/ApiSystrace';
-import ApiTransforms from './components/ApiTransforms';
-import ApiVibration from './components/ApiVibration';
+import ExpText from './components/basics/ExpText';
+import ExpActivityIndicator from './components/basics/ExpActivityIndicator';
+import ExpButton from './components/basics/ExpButton';
+import ExpFlatListSimple from './components/basics/ExpFlatListSimple'
+import ExpFlatListSelectable from './components/basics/ExpFlatListSelectable'
+import ExpImages from './components/basics/ExpImages'
+import ExpImageBackground from './components/basics/ExpImageBackground'
+import ExpKeyboard from './components/basics/ExpKeyboard';
+import ExpModal from './components/basics/ExpModal';
+import ExpRefresh from './components/basics/ExpRefresh';
+import ExpStatusBar from './components/basics/ExpStatusBar';
+import ExpSwitch from './components/basics/ExpSwitch';
+import ExpTextInput from './components/basics/ExpTextInput';
+import ExpTouchableHighlight from './components/basics/ExpTouchableHighlight';
+import ExpTouchableOpacity from './components/basics/ExpTouchableOpacity';
+import ExpTouchableWithoutFeedback from './components/basics/ExpTouchableWithoutFeedback';
+import ExpVirtualizedList from './components/basics/ExpVirtualizedList';
+import ApiAccessibilityInfo from './components/apis/ApiAccessibilityInfo';
+import ApiAlert from './components/apis/ApiAlert';
+import ApiAnimated from './components/apis/ApiAnimated';
+import ApiAppearance from './components/apis/ApiAppearance';
+import ApiAppRegistry from './components/apis/ApiAppRegistry';
+import ApiAppState from './components/apis/ApiAppState';
+import ApiDevSettings from './components/apis/ApiDevSettings';
+import ApiDimensions from './components/apis/ApiDimensions';
+import ApiEasing from './components/apis/ApiEasing';
+import ApiInteractionManager from './components/apis/ApiInteractionManager';
+import ApiKeyboard from './components/apis/ApiKeyboard';
+import ApiLayoutAnimation from './components/apis/ApiLayoutAnimation';
+import ApiLinking from './components/apis/ApiLinking';
+import ApiPanResponder from './components/apis/ApiPanResponder';
+import ApiPixelRatio from './components/apis/ApiPixelRatio';
+import ApiShare from './components/apis/ApiShare';
+import ApiStyleSheet from './components/apis/ApiStyleSheet';
+import ApiSystrace from './components/apis/ApiSystrace';
+import ApiTransforms from './components/apis/ApiTransforms';
+import ApiVibration from './components/apis/ApiVibration';
+import WrkFlex from './components/WrkFlex';
 
 const Routes = () => {
     return (
         <Router>
             <Scene key="root">
                 <Scene key="home" component={Home} title="Home" initial={true} />
-                <Scene key="expText" component={ExpText} title="Text Example" />
+                <Scene key='expText' component={ExpText} title='Text Example'/>
                 <Scene key="expActivityIndicator" component={ExpActivityIndicator} title="Example Activity Indicator" />
                 <Scene key="expButton" component={ExpButton} title="Button Examples" />
                 <Scene key="expFlatListSimple" component={ExpFlatListSimple} title="Flat List Simple" />
@@ -83,6 +84,7 @@ const Routes = () => {
                 <Scene key="apiSystrace" component={ApiSystrace} title="apiSystrace" />
                 <Scene key="apiTransforms" component={ApiTransforms} title="apiTransforms" />
                 <Scene key="apiVibration" component={ApiVibration} title="apiVibration" />
+                <Scene key="wrkFlex" component={WrkFlex} title="Flex Work" />
                 <Scene key="about" component={About} title="About" />
             </Scene>
         </Router>

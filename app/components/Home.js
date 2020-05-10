@@ -168,11 +168,11 @@ const DATA = [
         ]
     },
     {
-        key: 'Other',
+        key: 'My Applications',
         data: [
             {
-                'id': '24',
-                'value': 'S3_Record1'
+                'id': '37',
+                'value': 'Flex Work'
             },
             {
                 'id': '100',
@@ -294,7 +294,10 @@ const goToRoutes = (goTo) => {
             break;    
         case '36':
             Actions.apiVibration();
-            break;                                                           
+            break;
+        case '37':
+            Actions.wrkFlex();
+            break;                                                                 
         case '100':
             Actions.about();
             break;
