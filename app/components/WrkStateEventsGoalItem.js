@@ -12,7 +12,6 @@ const WrkStateEventsGoalItem = (props) => {
         //     <Text>{itemData.item.value}</Text>
         // </View>
         <TouchableOpacity
-            activeOpacity={0.8} 
             onPress={props.onDelete.bind(this, props.id)}
         >
             <View style={styles.listItem}>
