@@ -1,7 +1,8 @@
-import React, { useState } from "react";
-import { View, StyleSheet, Button, Alert } from "react-native";
+import React, { useState, useEffect } from "react";
+import { View, StyleSheet, Text, AppState } from "react-native";
 
 const ApiAppState = () => {
+
   const [appState, setAppState] = useState(AppState.currentState);
 
   useEffect(() => {
@@ -24,7 +25,7 @@ const ApiAppState = () => {
       <Text>Current state is: {appState}</Text>
     </View>
   );
-}
+};
 
 const styles = StyleSheet.create({
   container: {

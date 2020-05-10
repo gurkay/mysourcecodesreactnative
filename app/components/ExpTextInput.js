@@ -1,4 +1,4 @@
-import React, {useState} from 'react'
+import React, { useState } from 'react'
 import {
     TextInput,
     View,
@@ -9,7 +9,7 @@ import {
 import ExpSeparator from './ExpSeparator'
 
 function UselessTextInput(props) {
-    return(
+    return (
         <TextInput
             {...props}
             editable
@@ -19,19 +19,20 @@ function UselessTextInput(props) {
 }
 
 const ExpTextInput = () => {
-    const[changeText, setChangeText] = useState('Useless Placeholder');
+    const [changeText, setChangeText] = useState();
 
-    return(
+    return (
         <SafeAreaView style={styles.container}>
             <View>
                 <TextInput
                     style={styles.textInputStyle}
+                    placeholder='Write here...'
                     onChangeText={text => setChangeText(text)}
                     value={changeText}
                 />
                 <Text>{changeText}</Text>
             </View>
-            <ExpSeparator/>
+            <ExpSeparator />
             <View style={styles.textInputViewStyle}>
                 <UselessTextInput
                     multiline
@@ -43,21 +44,23 @@ const ExpTextInput = () => {
     );
 }
 
-const styles=StyleSheet.create({
-    container:{
-        flex:1,
-        marginTop:30,
-        marginHorizontal:15,
+const styles = StyleSheet.create({
+    container: {
+        flex: 1,
+        marginTop: 30,
+        marginHorizontal: 15,
     },
-    textInputStyle:{
-        height:40,
-        borderColor:'grey',
-        borderWidth:1,
+    textInputStyle: {
+        margin: 60,
+        padding: 10,
+        borderWidth: 0.5,
+        borderRadius: 4,
+        backgroundColor: "#fff"
     },
-    textInputViewStyle:{
-        backgroundColor:'gray',
-        borderBottomColor:'#000000',
-        borderBottomWidth:1,
+    textInputViewStyle: {
+        backgroundColor: 'gray',
+        borderBottomColor: '#000000',
+        borderBottomWidth: 1,
     }
 });
 

@@ -1,10 +1,10 @@
-import React, { useState } from "react";
-import { View, StyleSheet, Button, Alert } from "react-native";
+import React from "react";
+import { StyleSheet, Text, View } from "react-native";
 
-const ApiStyleSheet = () =>  {
+const ApiStyleSheet = () => {
   return (
     <View style={styles.container}>
-
+      <Text style={styles.title}>React Native</Text>
     </View>
   );
 }
@@ -12,8 +12,20 @@ const ApiStyleSheet = () =>  {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    justifyContent: "space-around",
-    alignItems: "center"
+    padding: 24,
+    backgroundColor: "#000"
+  },
+  title: {
+    marginTop: 16,
+    paddingVertical: 8,
+    borderWidth: 4,
+    borderColor: "#dc2a2a",
+    borderRadius: 6,
+    backgroundColor: "#61dafb",
+    color: "#20232a",
+    textAlign: "center",
+    fontSize: 30,
+    fontWeight: "bold"
   }
 });
 

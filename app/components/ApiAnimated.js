@@ -1,5 +1,5 @@
-import React, { useState } from "react";
-import { View, StyleSheet, Button, Alert } from "react-native";
+import React, { useRef } from "react";
+import { Animated, View, StyleSheet, Button, Text } from "react-native";
 
 const ApiAnimated = () => {
   // fadeAnim will be used as the value for opacity. Initial Value: 0
@@ -9,7 +9,8 @@ const ApiAnimated = () => {
     // Will change fadeAnim value to 1 in 5 seconds
     Animated.timing(fadeAnim, {
       toValue: 1,
-      duration: 2000
+      duration: 2000,
+      useNativeDriver:false
     }).start();
   };
 
@@ -17,7 +18,8 @@ const ApiAnimated = () => {
     // Will change fadeAnim value to 0 in 5 seconds
     Animated.timing(fadeAnim, {
       toValue: 0,
-      duration: 2000
+      duration: 2000,
+      useNativeDriver:false
     }).start();
   };
 

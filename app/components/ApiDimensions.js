@@ -1,10 +1,27 @@
-import React, { useState } from "react";
-import { View, StyleSheet, Button, Alert } from "react-native";
+import React, { useState, useEffect } from "react";
+import { View, StyleSheet, Dimensions, Text } from "react-native";
 
-const ApiDimensions = () =>  {
+const window = Dimensions.get("window");
+const screen = Dimensions.get("screen");
+
+const ApiDimensions = () => {
+  const [dimensions, setDimensions] = useState({ window, screen });
+
+  const onChange = ({ window, screen }) => {
+    setDimensions({ window, screen });
+  };
+
+  useEffect(() => {
+    Dimensions.addEventListener("change", onChange);
+    return () => {
+      Dimensions.removeEventListener("change", onChange);
+    };
+  });
+
   return (
     <View style={styles.container}>
-
+      <Text>{`Window Dimensions: height - ${dimensions.window.height}, width - ${dimensions.window.width}`}</Text>
+      <Text>{`Screen Dimensions: height - ${dimensions.screen.height}, width - ${dimensions.screen.width}`}</Text>
     </View>
   );
 }
@@ -12,7 +29,7 @@ const ApiDimensions = () =>  {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    justifyContent: "space-around",
+    justifyContent: "center",
     alignItems: "center"
   }
 });

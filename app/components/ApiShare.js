@@ -1,20 +1,31 @@
-import React, { useState } from "react";
-import { View, StyleSheet, Button, Alert } from "react-native";
+import React from 'react';
+import { Share, View, Button } from 'react-native';
 
-const ApiShare = () =>  {
+const ApiShare = () => {
+  const onShare = async () => {
+    try {
+      const result = await Share.share({
+        message:
+          'React Native | A framework for building native apps using React',
+      });
+      if (result.action === Share.sharedAction) {
+        if (result.activityType) {
+          // shared with activity type of result.activityType
+        } else {
+          // shared
+        }
+      } else if (result.action === Share.dismissedAction) {
+        // dismissed
+      }
+    } catch (error) {
+      alert(error.message);
+    }
+  };
   return (
-    <View style={styles.container}>
-
+    <View style={{ marginTop: 50 }}>
+      <Button onPress={onShare} title="Share" />
     </View>
   );
-}
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    justifyContent: "space-around",
-    alignItems: "center"
-  }
-});
+};
 
 export default ApiShare;
