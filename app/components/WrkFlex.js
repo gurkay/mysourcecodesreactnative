@@ -38,18 +38,18 @@ const WrkFlex = () => {
 const styles = StyleSheet.create({
     containerMain0: {
         flexDirection: 'column',
-        justifyContent: 'center',
+        justifyContent: 'space-around',
         alignItems: 'center'
     },
     containerMain1: {
         flexDirection: 'row',
-        margin: 50,
+        margin: 20,
         justifyContent: 'space-between',
         alignItems: 'stretch'
     },
     containerMain2: {
         flexDirection: 'column',
-        margin: 50,
+        margin: 20,
         justifyContent: 'space-between',
         alignItems: 'stretch'
     },

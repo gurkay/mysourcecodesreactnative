@@ -175,6 +175,38 @@ const DATA = [
                 'value': 'Flex Work'
             },
             {
+                'id': '38',
+                'value': 'State & Events'
+            },
+            {
+                'id': '39',
+                'value': 'Flex Work'
+            },
+            {
+                'id': '40',
+                'value': 'Flex Work'
+            },
+            {
+                'id': '41',
+                'value': 'Flex Work'
+            },
+            {
+                'id': '42',
+                'value': 'Flex Work'
+            },
+            {
+                'id': '43',
+                'value': 'Flex Work'
+            },
+            {
+                'id': '44',
+                'value': 'Flex Work'
+            },
+            {
+                'id': '45',
+                'value': 'Flex Work'
+            },
+            {
                 'id': '100',
                 'value': 'About'
             }
@@ -297,7 +329,43 @@ const goToRoutes = (goTo) => {
             break;
         case '37':
             Actions.wrkFlex();
-            break;                                                                 
+            break;
+        case '38':
+            Actions.wrkStateEvents();
+            break;
+        case '39':
+            Actions.apiStyleSheet();
+            break;
+        case '40':
+            Actions.apiSystrace();
+            break;
+        case '41':
+            Actions.apiTransforms();
+            break;    
+        case '42':
+            Actions.apiVibration();
+            break;
+        case '43':
+            Actions.wrkFlex();
+            break;
+        case '44':
+            Actions.apiShare();
+            break;
+        case '45':
+            Actions.apiStyleSheet();
+            break;
+        case '46':
+            Actions.apiSystrace();
+            break;
+        case '47':
+            Actions.apiTransforms();
+            break;    
+        case '48':
+            Actions.apiVibration();
+            break;
+        case '49':
+            Actions.wrkFlex();
+            break;                                                                            
         case '100':
             Actions.about();
             break;

@@ -41,6 +41,7 @@ import ApiSystrace from './components/apis/ApiSystrace';
 import ApiTransforms from './components/apis/ApiTransforms';
 import ApiVibration from './components/apis/ApiVibration';
 import WrkFlex from './components/WrkFlex';
+import WrkStateEvents from './components/WrkStateEvents';
 
 const Routes = () => {
     return (
@@ -85,6 +86,7 @@ const Routes = () => {
                 <Scene key="apiTransforms" component={ApiTransforms} title="apiTransforms" />
                 <Scene key="apiVibration" component={ApiVibration} title="apiVibration" />
                 <Scene key="wrkFlex" component={WrkFlex} title="Flex Work" />
+                <Scene key="wrkStateEvents" component={WrkStateEvents} title="State and Events Work" />
                 <Scene key="about" component={About} title="About" />
             </Scene>
         </Router>
