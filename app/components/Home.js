@@ -64,6 +64,22 @@ const DATA = [
                 'id': '12',
                 'value': 'Text Input'
             },
+            {
+                'id': '13',
+                'value': 'TouchableHighlight'
+            },
+            {
+                'id': '14',
+                'value': 'TouchableOpacity'
+            },
+            {
+                'id': '15',
+                'value': 'TouchableWithoutFeedback'
+            },
+            {
+                'id': '16',
+                'value': 'VirtualizedList'
+            },      
         ]
     },
     {
@@ -135,6 +151,18 @@ const goToRoutes = (goTo) => {
         case '12':
             Actions.expTextInput();
             break;
+        case '13':
+            Actions.expTouchableHighlight();
+            break;
+        case '14':
+            Actions.expTouchableOpacity();
+            break;
+        case '15':
+            Actions.expTouchableWithoutFeedback();
+            break;
+        case '16':
+            Actions.expVirtualizedList();
+            break;                                   
         case '25':
             Actions.about();
             break;
@@ -164,8 +192,6 @@ const Home = () => {
     );
 }
 
-export default Home;
-
 const styles = StyleSheet.create({
     container: {
         flex: 1,
@@ -185,3 +211,5 @@ const styles = StyleSheet.create({
         fontSize: 24
     }
 });
+
+export default Home;

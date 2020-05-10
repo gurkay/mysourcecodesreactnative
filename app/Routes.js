@@ -1,5 +1,6 @@
-import React, { Component } from 'react';
+import React from 'react';
 import { Router, Scene } from 'react-native-router-flux';
+
 import Home from './components/Home';
 import About from './components/About';
 import ExpText from './components/ExpText';
@@ -15,6 +16,10 @@ import ExpRefresh from './components/ExpRefresh';
 import ExpStatusBar from './components/ExpStatusBar';
 import ExpSwitch from './components/ExpSwitch';
 import ExpTextInput from './components/ExpTextInput';
+import ExpTouchableHighlight from './components/ExpTouchableHighlight';
+import ExpTouchableOpacity from './components/ExpTouchableOpacity';
+import ExpTouchableWithoutFeedback from './components/ExpTouchableWithoutFeedback';
+import ExpVirtualizedList from './components/ExpVirtualizedList';
 
 const Routes = () => {
     return (
@@ -34,6 +39,10 @@ const Routes = () => {
                 <Scene key="expStatusBar" component={ExpStatusBar} title="StatusBar Example"/>
                 <Scene key="expSwitch" component={ExpSwitch} title="Switch Example"/>
                 <Scene key="expTextInput" component={ExpTextInput} title="Text Input Example"/>
+                <Scene key="expTouchableHighlight" component={ExpTouchableHighlight} title="TouchableHighlight Example"/>
+                <Scene key="expTouchableOpacity" component={ExpTouchableOpacity} title="TouchableOpacity Example"/>
+                <Scene key="expTouchableWithoutFeedback" component={ExpTouchableWithoutFeedback} title="TouchableWithoutFeedback Example"/>
+                <Scene key="expVirtualizedList" component={ExpVirtualizedList} title="VirtualizedList Example" />
                 <Scene key="about" component={About} title="About" />
             </Scene>
         </Router>
