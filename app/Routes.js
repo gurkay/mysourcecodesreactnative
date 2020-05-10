@@ -20,6 +20,26 @@ import ExpTouchableHighlight from './components/ExpTouchableHighlight';
 import ExpTouchableOpacity from './components/ExpTouchableOpacity';
 import ExpTouchableWithoutFeedback from './components/ExpTouchableWithoutFeedback';
 import ExpVirtualizedList from './components/ExpVirtualizedList';
+import ApiAccessibilityInfo from './components/ApiAccessibilityInfo';
+import ApiAlert from './components/ApiAlert';
+import ApiAnimated from './components/ApiAnimated';
+import ApiAppearance from './components/ApiAppearance';
+import ApiAppRegistry from './components/ApiAppRegistry';
+import ApiAppState from './components/ApiAppState';
+import ApiDevSettings from './components/ApiDevSettings';
+import ApiDimensions from './components/ApiDimensions';
+import ApiEasing from './components/ApiEasing';
+import ApiInteractionManager from './components/ApiInteractionManager';
+import ApiKeyboard from './components/ApiKeyboard';
+import ApiLayoutAnimation from './components/ApiLayoutAnimation';
+import ApiLinking from './components/ApiLinking';
+import ApiPanResponder from './components/ApiPanResponder';
+import ApiPixelRatio from './components/ApiPixelRatio';
+import ApiShare from './components/ApiShare';
+import ApiStyleSheet from './components/ApiStyleSheet';
+import ApiSystrace from './components/ApiSystrace';
+import ApiTransforms from './components/ApiTransforms';
+import ApiVibration from './components/ApiVibration';
 
 const Routes = () => {
     return (
@@ -43,6 +63,26 @@ const Routes = () => {
                 <Scene key="expTouchableOpacity" component={ExpTouchableOpacity} title="TouchableOpacity Example"/>
                 <Scene key="expTouchableWithoutFeedback" component={ExpTouchableWithoutFeedback} title="TouchableWithoutFeedback Example"/>
                 <Scene key="expVirtualizedList" component={ExpVirtualizedList} title="VirtualizedList Example" />
+                <Scene key="apiAccessibilityInfo" component={ApiAccessibilityInfo} title="AccessibilityInfo" />
+                <Scene key="apiAlert" component={ApiAlert} title="apiAlert" />
+                <Scene key="apiAnimated" component={ApiAnimated} title="apiAnimated" />
+                <Scene key="apiAppearance" component={ApiAppearance} title="apiAppearance" />
+                <Scene key="apiAppRegistry" component={ApiAppRegistry} title="apiAppRegistry" />
+                <Scene key="apiAppState" component={ApiAppState} title="apiAppState" />
+                <Scene key="apiDevSettings" component={ApiDevSettings} title="apiDevSettings" />
+                <Scene key="apiDimensions" component={ApiDimensions} title="apiDimensions" />
+                <Scene key="apiEasing" component={ApiEasing} title="apiEasing" />
+                <Scene key="apiInteractionManager" component={ApiInteractionManager} title="apiInteractionManager" />
+                <Scene key="apiKeyboard" component={ApiKeyboard} title="apiKeyboard" />
+                <Scene key="apiLayoutAnimation" component={ApiLayoutAnimation} title="apiLayoutAnimation" />
+                <Scene key="apiLinking" component={ApiLinking} title="apiLinking" />
+                <Scene key="apiPanResponder" component={ApiPanResponder} title="apiPanResponder" />
+                <Scene key="apiPixelRatio" component={ApiPixelRatio} title="apiPixelRatio" />
+                <Scene key="apiShare" component={ApiShare} title="apiShare" />
+                <Scene key="apiStyleSheet" component={ApiStyleSheet} title="apiStyleSheet" />
+                <Scene key="apiSystrace" component={ApiSystrace} title="apiSystrace" />
+                <Scene key="apiTransforms" component={ApiTransforms} title="apiTransforms" />
+                <Scene key="apiVibration" component={ApiVibration} title="apiVibration" />
                 <Scene key="about" component={About} title="About" />
             </Scene>
         </Router>

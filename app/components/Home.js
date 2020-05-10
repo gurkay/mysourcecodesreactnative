@@ -83,16 +83,88 @@ const DATA = [
         ]
     },
     {
-        key: 'App Examples',
+        key: 'App APIs',
         data: [
             {
+                'id': '17',
+                'value': 'AccessibilityInfo'
+            },
+            {
+                'id': '18',
+                'value': 'Alert'
+            },
+            {
+                'id': '19',
+                'value': 'Animated'
+            },
+            {
+                'id': '20',
+                'value': 'Appearance'
+            },
+            {
+                'id': '21',
+                'value': 'AppRegistry'
+            },
+            {
                 'id': '22',
-                'value': 'S2_Record1'
+                'value': 'AppState'
             },
             {
                 'id': '23',
-                'value': 'S2_Record2'
-            }
+                'value': 'DevSettings'
+            },
+            {
+                'id': '24',
+                'value': 'Dimensions'
+            },
+            {
+                'id': '25',
+                'value': 'Easing'
+            },
+            {
+                'id': '26',
+                'value': 'InteractionManager'
+            },
+            {
+                'id': '27',
+                'value': 'Keyboard'
+            },
+            {
+                'id': '28',
+                'value': 'LayoutAnimation'
+            },
+            {
+                'id': '29',
+                'value': 'Linking'
+            },
+            {
+                'id': '30',
+                'value': 'PanResponder'
+            },
+            {
+                'id': '31',
+                'value': 'PixelRatio'
+            },
+            {
+                'id': '32',
+                'value': 'Share'
+            },
+            {
+                'id': '33',
+                'value': 'StyleSheet'
+            },
+            {
+                'id': '34',
+                'value': 'Systrace'
+            },
+            {
+                'id': '35',
+                'value': 'Transforms'
+            },
+            {
+                'id': '36',
+                'value': 'Vibration'
+            },
         ]
     },
     {
@@ -103,7 +175,7 @@ const DATA = [
                 'value': 'S3_Record1'
             },
             {
-                'id': '25',
+                'id': '100',
                 'value': 'About'
             }
         ]
@@ -162,8 +234,68 @@ const goToRoutes = (goTo) => {
             break;
         case '16':
             Actions.expVirtualizedList();
-            break;                                   
+            break;
+        case '17':
+            Actions.apiAccessibilityInfo();
+            break;
+        case '18':
+            Actions.apiAlert();
+            break;
+        case '19':
+            Actions.apiAnimated();
+            break;
+        case '20':
+            Actions.apiAppearance();
+            break;
+        case '21':
+            Actions.apiAppRegistry();
+            break;
+        case '22':
+            Actions.apiAppState();
+            break;
+        case '23':
+            Actions.apiDevSettings();
+            break;
+        case '24':
+            Actions.apiDimensions();
+            break;
         case '25':
+            Actions.apiEasing();
+            break; 
+        case '26':
+            Actions.apiInteractionManager();
+            break;
+        case '27':
+            Actions.apiKeyboard();
+            break; 
+        case '28':
+            Actions.apiLayoutAnimation();
+            break; 
+        case '29':
+            Actions.apiLinking();
+            break;
+        case '30':
+            Actions.apiPanResponder();
+            break;
+        case '31':
+            Actions.apiPixelRatio();
+            break;
+        case '32':
+            Actions.apiShare();
+            break;
+        case '33':
+            Actions.apiStyleSheet();
+            break;
+        case '34':
+            Actions.apiSystrace();
+            break;
+        case '35':
+            Actions.apiTransforms();
+            break;    
+        case '36':
+            Actions.apiVibration();
+            break;                                                           
+        case '100':
             Actions.about();
             break;
     }
