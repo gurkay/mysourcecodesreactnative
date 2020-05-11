@@ -8,7 +8,7 @@ import {
 } from 'react-native'
 import ExpSeparato from './ExpSeparator'
 
-const imageSource = require("../images/input.jpg");
+const imageSource = require("../../images/input.jpg");
 
 const ExpImageBackground = () => {
     return(
@@ -20,7 +20,7 @@ const ExpImageBackground = () => {
                 <ExpSeparato/>
                 <Image
                     style={styles.logo}
-                    source={require('../images/linux.png')}
+                    source={require('../../images/linux.png')}
                 />
             </ImageBackground>
         </View>

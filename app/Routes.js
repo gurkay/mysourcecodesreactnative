@@ -1,8 +1,8 @@
 import React from 'react';
 import { Router, Scene } from 'react-native-router-flux';
 
-import Home from './components/Home';
-import About from './components/About';
+import Home from './components/myRoutes/Home';
+import About from './components/myRoutes/About';
 import ExpText from './components/basics/ExpText';
 import ExpActivityIndicator from './components/basics/ExpActivityIndicator';
 import ExpButton from './components/basics/ExpButton';
@@ -40,8 +40,8 @@ import ApiStyleSheet from './components/apis/ApiStyleSheet';
 import ApiSystrace from './components/apis/ApiSystrace';
 import ApiTransforms from './components/apis/ApiTransforms';
 import ApiVibration from './components/apis/ApiVibration';
-import WrkFlex from './components/WrkFlex';
-import WrkStateEvents from './components/WrkStateEvents';
+import WrkFlex from './components/maxWork1/WrkFlex';
+import WrkStateEvents from './components/maxWork1/WrkStateEvents';
 
 const Routes = () => {
     return (

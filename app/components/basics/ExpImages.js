@@ -15,7 +15,7 @@ const ExpImages = () => {
             </Text>
             <Image
                 style={styles.tinyLogo}
-                source={require('../images/linux.png')}
+                source={require('../../images/linux.png')}
             />
             <ExpSeparator/>
             <Text>
@@ -23,7 +23,7 @@ const ExpImages = () => {
             </Text>
             <Image
                 style={styles.logo}
-                source={require('../images/linux.png')}
+                source={require('../../images/linux.png')}
             />
             <ExpSeparator/>
             <Text>
@@ -31,7 +31,7 @@ const ExpImages = () => {
             </Text>
             <Image
                 style={styles.stretch}
-                source={require('../images/linux.png')}
+                source={require('../../images/linux.png')}
             />
         </View>
     );
