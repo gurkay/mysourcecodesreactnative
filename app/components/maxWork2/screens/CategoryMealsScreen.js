@@ -12,8 +12,10 @@ import { CATEGORIES } from '../data/dummy-data';
 
 const CategoryMealsScreen = (props) => {
 
-    const catId = props.route.params.categoryId;
-    const otherParam = props.route.params.otherParam;
+    const myParams = props.route.params;
+
+    const catId = myParams.categoryId;
+    const otherParam = myParams.otherParam;
     const selectedCategory = CATEGORIES.find(cat => cat.id === catId);
 
     return (
