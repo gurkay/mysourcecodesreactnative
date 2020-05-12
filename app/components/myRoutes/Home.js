@@ -180,7 +180,7 @@ const DATA = [
             },
             {
                 'id': '39',
-                'value': 'Flex Work'
+                'value': 'Max Food Work'
             },
             {
                 'id': '40',
@@ -217,13 +217,13 @@ const DATA = [
 const goToRoutes = (goTo) => {
     switch (goTo) {
         case '0':
-            Actions.expText();
+            Actions.expText({title: 'Text Example'});
             break;
         case '1':
-            Actions.expActivityIndicator();
+            Actions.expActivityIndicator({title: 'Example Activity Indicator'});
             break;
         case '2':
-            Actions.expButton();
+            Actions.expButton({title: 'Button'});
             break;
         case '3':
             Actions.expFlatListSimple();
@@ -334,7 +334,7 @@ const goToRoutes = (goTo) => {
             Actions.wrkStateEvents();
             break;
         case '39':
-            Actions.apiStyleSheet();
+            Actions.app({title: 'Max Food Work'});
             break;
         case '40':
             Actions.apiSystrace();

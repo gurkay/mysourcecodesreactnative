@@ -42,15 +42,16 @@ import ApiTransforms from './components/apis/ApiTransforms';
 import ApiVibration from './components/apis/ApiVibration';
 import WrkFlex from './components/maxWork1/WrkFlex';
 import WrkStateEvents from './components/maxWork1/WrkStateEvents';
+import App from './components/maxWork2/App';
 
-const Routes = () => {
+const Routes = (props) => {
     return (
         <Router>
             <Scene key="root">
                 <Scene key="home" component={Home} title="Home" initial={true} />
-                <Scene key='expText' component={ExpText} title='Text Example'/>
-                <Scene key="expActivityIndicator" component={ExpActivityIndicator} title="Example Activity Indicator" />
-                <Scene key="expButton" component={ExpButton} title="Button Examples" />
+                <Scene key='expText' component={ExpText} title={props.title}/>
+                <Scene key="expActivityIndicator" component={ExpActivityIndicator} title={props.title} />
+                <Scene key="expButton" component={ExpButton} title={props.title} />
                 <Scene key="expFlatListSimple" component={ExpFlatListSimple} title="Flat List Simple" />
                 <Scene key="expFlatListSelectable" component={ExpFlatListSelectable} title="Flat List Selectable" />
                 <Scene key="expImages" component={ExpImages} title="Images Examples" />
@@ -87,6 +88,7 @@ const Routes = () => {
                 <Scene key="apiVibration" component={ApiVibration} title="apiVibration" />
                 <Scene key="wrkFlex" component={WrkFlex} title="Flex Work" />
                 <Scene key="wrkStateEvents" component={WrkStateEvents} title="State and Events Work" />
+                <Scene key="app" component={App} title={props.title} />
                 <Scene key="about" component={About} title="About" />
             </Scene>
         </Router>
