@@ -1,4 +1,4 @@
-import * as React from 'react';
+import React from 'react';
 import { NavigationContainer } from '@react-navigation/native';
 import { createStackNavigator } from '@react-navigation/stack';
 
@@ -15,9 +15,28 @@ const MealsNavigation = () => {
             <Stack.Navigator
                 initialRouteName="Categories"
             >
-                <Stack.Screen name="Categories" component={CategoriesScreen} />
-                <Stack.Screen name="CategoryMeals" component={CategoryMealsScreen} />
-                <Stack.Screen name="MealDetail" component={MealDetailScreen} />
+                <Stack.Screen
+                    name="Categories"
+                    component={CategoriesScreen}
+                    options={{
+                        title: 'Meal Categories',
+                        headerStyle: {
+                            backgroundColor: '#f4511e',
+                        },
+                        headerTintColor: '#fff',
+                        headerTitleStyle: {
+                            fontWeight: 'bold',
+                        },
+                    }}
+                />
+                <Stack.Screen
+                    name="CategoryMeals"
+                    component={CategoryMealsScreen}
+                />
+                <Stack.Screen
+                    name="MealDetail"
+                    component={MealDetailScreen}
+                />
             </Stack.Navigator>
         </NavigationContainer >
     );

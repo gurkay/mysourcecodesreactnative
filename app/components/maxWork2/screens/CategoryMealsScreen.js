@@ -30,6 +30,10 @@ const CategoryMealsScreen = (props) => {
     );
 }
 
+CategoryMealsScreen.navigation = (navigationData) => {
+    console.log(navigationData);
+}
+
 const styles = StyleSheet.create({
     screen: {
         flex: 1,
